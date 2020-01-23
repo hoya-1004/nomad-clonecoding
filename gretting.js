@@ -13,9 +13,15 @@ const USER_LS = "currentUser",
 
  function loadName(){
      const currentUser = localStorage.getItem(USER_LS);
-     if(currentUser == null){
+     if(currentUser === null){
      }
      else{
          paintGreeting(currentUser);
      }
  }
+
+ function init(){
+     loadName();
+ }
+
+ init();
