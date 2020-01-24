@@ -5,6 +5,21 @@
 const USER_LS = "currentUser",
  SHOWING_CN = "showing";
 
+function saveName(text){
+    localStorage.setItem(USER_LS,text);
+}
+
+function handkeSubmit(event){
+    event.preventDefalut();
+    const currentValue = input.value;
+    paintGreeting(currentValue);
+}
+
+function askForName(){
+    form.classList.add(SHOWING_ON);
+    form.addEventListener("submit", handkeSubmit)
+}
+
  function paintGreeting(text) {
      form.classList.remove(SHOWING_CN);
      greeting.classList.add(SHOWING_CN);
