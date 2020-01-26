@@ -13,6 +13,7 @@ function handkeSubmit(event){
     event.preventDefalut();
     const currentValue = input.value;
     paintGreeting(currentValue);
+    saveName(currentValue);
 }
 
 function askForName(){
