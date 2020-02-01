@@ -7,7 +7,6 @@ body{/*기본 배경화면 바탕 하얀색 설정*/
 
 body{/*효과 들어가서 마우스커서가 시간에 갖다대져 지면 0.5초 텀을 주면서 색 변환*/
     color: #34495e;
-    transition: color 0.5s ease-in-out;
 }
 .clicked{/*클릭시 색깔 변경*/
     color :#7f8c8d;
