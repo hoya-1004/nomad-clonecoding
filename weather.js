@@ -1,4 +1,9 @@
-const COORDS = 'coords';
+const API_KEY = "";
+const COORDS = "coords";
+
+function saveCoords(coordsObj){
+	localStorage.setItem(COORDS, JSON.stringify(coordsObj));
+}
 
 function handleeGeoSucces(position){
 	const latitude = position.coords.latitude;
@@ -30,4 +35,3 @@ function init(){
 }
 
 init();
-
