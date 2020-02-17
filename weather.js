@@ -1,4 +1,4 @@
-const API_KEY = "";
+const API_KEY = "28c94e858edcc6d73e8c1e2c590f5670";
 const COORDS = "coords";
 
 function saveCoords(coordsObj){
